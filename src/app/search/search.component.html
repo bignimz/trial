@@ -1,0 +1,12 @@
+<form (ngSubmit)="getUser()" name="userForm" #userForm="ngForm">
+  <input
+    type="search"
+    name="username"
+    id="username"
+    placeholder="enter username"
+    [(ngModel)]="username"
+  />
+  <button type="submit">Submit</button>
+</form>
+{{ username }}
+<app-users></app-users>
